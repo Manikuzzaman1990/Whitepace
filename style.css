@@ -211,3 +211,20 @@ Extension area css
     margin-bottom: 50px;
   }
 }
+
+/*
+Customise area css
+*/
+.customise-area {
+  background-color: #ffffff;
+  padding: 140px 0;
+}
+.customise-area .theme-text h3 {
+  font-size: 62px;
+}
+
+@media (max-width: 991px) {
+  .customise-area {
+    padding: 80px 0;
+  }
+}
