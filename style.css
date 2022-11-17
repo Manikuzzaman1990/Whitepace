@@ -310,3 +310,11 @@ Your Work Area css
   color: #ffffff;
   font-size: 15px;
 }
+
+/*
+your data area css
+*/
+.your-data-area {
+  padding: 140px 0;
+  background-color: #fff;
+}
