@@ -46,7 +46,7 @@ body {
   color: #043873 !important;
   text-decoration: none;
 }
-.theme-button img {
+.theme-button i {
   margin-left: 8px;
 }
 .theme-text h3 {
@@ -74,12 +74,30 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 1399px) {
+  .header-area {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header-area {
+    font-size: 12px;
+  }
+  .header-area .nav-link {
+    padding: 10px 15px !important;
+  }
+}
+
 @media (max-width: 991px) {
   .theme-text {
     text-align: center;
   }
   .theme-text h3 {
     font-size: 36px;
+  }
+  .header-area {
+    font-size: 18px;
   }
 }
 
@@ -184,6 +202,11 @@ Management Area css
 .work-together {
   margin-top: 100px;
 }
+.work-together .theme-text h3 span::after {
+  background-image: url(img/work-element.png);
+  background-size: contain;
+  background-position: bottom;
+}
 
 @media (max-width: 991px) {
   .management-area {
@@ -203,6 +226,14 @@ Extension area css
 .extension-area {
   padding: 140px 0;
   background-color: #043873;
+}
+.extension-area .theme-text h3 span::after {
+  top: 32px;
+}
+.extension-area .theme-text h3 span::after {
+  background-image: url(img/extention-element.png);
+  background-size: contain;
+  background-position: bottom;
 }
 
 .extension-area .theme-text h3 {
@@ -272,9 +303,16 @@ Pricing area css
 .single-pricing ul li {
   list-style: none;
   margin-bottom: 28px;
+  display: flex;
+  align-items: center;
 }
 .single-pricing ul li:last-child {
   margin: 0;
+}
+.single-pricing img {
+  height: 21px !important;
+  width: 21px !important;
+  margin-right: 10px;
 }
 
 .special-pricing {
@@ -284,6 +322,23 @@ Pricing area css
 }
 .special-pricing h2 {
   color: #FFE492;
+}
+.pricing-area .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.pricing-area .owl-dots{
+  text-align: center;
+}
+.pricing-area .owl-dots button {
+  height: 15px;
+  width: 15px;
+  background-color: #4F9CF9;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.pricing-area .owl-dots button.active {
+  background-color: #043873;
 }
 
 @media (max-width: 991px) {
@@ -396,19 +451,23 @@ Testimonial Area Css
   background: #4F9CF9;
   box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  color: #fff;
+  transition: .3s;
+}
+.single-testimonial:hover {
+  background-color: #fff;
   color: #212529;
+  cursor: pointer;
+  
 }
 .testimonial-text {
   border-bottom: 1px solid #212529;
 }
-.testimonial-text img {
-  margin-bottom: 40px;
-  height: 60px;
-  width: auto !important;
+.testimonial-text i {
+  font-size: 55px;
 }
 .testimonial-text p {
   margin-bottom: 25px;
-  color: #fff;
 }
 .testimonial-author {
   margin-top: 40px;
@@ -419,11 +478,11 @@ Testimonial Area Css
 }
 .author-text h3 {
   font-size: 18px;
+  color: #043873;
 }
 .author-text p {
   margin-bottom: 0;
   font-size: 14px;
-  color: #ffffff;
 }
 .testimonial-area .owl-dots {
   text-align: center;
