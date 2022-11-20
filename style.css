@@ -127,8 +127,10 @@ Header css
 }
 
 @media (max-width: 991px) {
-  .theme-button {
+  .header-area .theme-button {
     width: 100%;
+  }
+  .theme-button {
     text-align: center;
     margin-left: 0;
     margin-top: 15px;
@@ -249,6 +251,9 @@ Extension area css
   }
   .extension-area .theme-button {
     margin-bottom: 50px;
+  }
+  .extension-area .theme-text h3 span::after {
+    top: 0;
   }
 }
 
