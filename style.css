@@ -362,6 +362,11 @@ Your Work Area css
   padding: 140px 0;
   background-color: #043873;
 }
+.your-work-area .theme-text h3 span::after {
+  background-image: url(img/your-work-element.png);
+  background-size: contain;
+  background-position: bottom;
+}
 .your-work-area .theme-text h3 {
   color: #ffffff;
   font-size: 60px;
@@ -373,6 +378,12 @@ Your Work Area css
 @media (max-width: 991px) {
   .your-work-area {
     padding: 80px 0;
+  }
+  .your-work-area .theme-text {
+    text-align: left;
+  }
+  .your-work-area .theme-text h3 {
+    font-size: 36px;
   }
 }
 
